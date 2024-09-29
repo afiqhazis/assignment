@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Header Styling */
+header {
+    background-color: #5c7f67;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Section Styling */
+section {
+    margin: 20px 0;
+}
+
+section h2 {
+    font-size: 1.8rem;
+    color: #4a6057;
+    margin-bottom: 10px;
+}
+
+section p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+/* Button Styling */
+button {
+    display: inline-block;
+    background-color: #5c7f67;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #476851;
+}
+
+#scrollToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: #476851;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    display: none;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Form Styling (BMI Calculator) */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+input[type="number"]:focus {
+    outline: none;
+    border-color: #5c7f67;
+}
+
+/* Result Styling */
+#bmiResult {
+    margin-top: 20px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #4a6057;
+}
+
+/* Extra Info Section */
+#extraInfo {
+    background-color: #e8f5e9;
+    padding: 10px;
+    border-left: 5px solid #5c7f67;
+    margin-top: 10px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    button {
+        width: 100%;
+    }
+}
